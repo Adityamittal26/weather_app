@@ -146,8 +146,13 @@ body {
             height:100%;
     }
     .search_form{
+        display: inline-grid;
         align-items: center;
     }
+    .search{
+        width: 80%;
+    }
 }
+
 
 
