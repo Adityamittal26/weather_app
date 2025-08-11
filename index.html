@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="heading">
+            <h1 class="logo">Weather <span>App</span></h1>
+        </div>
+        <div class="btn_box">
+            <div id="btn"></div>
+            <button type="button" class="toggle_btn" onclick="leftClick()">°C</button>
+            <button type="button" class="toggle_btn" onclick="rightClick()">°F</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="div1">
+            <div>
+                <h1 id="temp">22°</h1>
+                <h2 id="location">in Delhi</h2>
+                <p id="date">12:58 - Monday 22-11-25</p>
+                <p id="condition">Mist</p>
+            </div>
+        </div>
+        <div class="div2">
+            <form class="search_form">
+                <input type="text" class="search" placeholder="search for city">
+                <button type="submit" class="search_button">Search</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

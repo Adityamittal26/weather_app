@@ -1,0 +1,153 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background: linear-gradient(to bottom right, #4b0000, #800000, #b22222);
+    color: antiquewhite;
+    font-family: 'Segoe UI', sans-serif;
+
+    }
+
+.heading {
+    margin: 0 60% 0 2%;
+    max-width: 40%;
+    padding: 1em;
+}
+
+.logo {
+    font-family: Satisfy, cursive;
+    font-size:1.4em;
+    margin-top: .2em;
+    color: SandyBrown;
+    text-shadow: 0.02em 0.02em 0 Brown, 0 0 0.5em violet;
+}
+
+.logo span {
+    display: inline;
+    padding-top: 0.5em;
+}
+
+.navbar{
+    display : flex;
+    justify-content: center;
+}
+
+.btn_box {
+    margin: auto;
+    width: 140px;
+    height: 30px;;
+    border-radius: 15px;
+    background-color: black;
+    position: relative;
+
+}
+
+#btn {
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s;
+    background: linear-gradient(to right, #a91039, #6c211a);
+}
+
+.toggle_btn {
+    width: 67px;
+    height: 30px;
+    background-color: transparent;
+    color: antiquewhite;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    padding: 6 auto;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    height: 90vh;
+}
+
+.div1 {
+    flex: 1;
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.div2 {
+    flex: 1;
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search{
+    padding:0 1em 0 1em ;
+    font-size: large;
+    border: none;
+    background-color: transparent;
+    color: antiquewhite;
+    border-bottom: solid 1px white;
+    display: block;
+    outline: none;
+    width: 50%;
+}
+.search_button {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid antiquewhite;
+    color: antiquewhite;
+    border-radius: 4px;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    transition: background 0.3s;
+}
+.search_button:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+
+/* Add responsive design for mobile */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+    .div1{
+        width: 100%;
+        height: 80em;
+        padding: 2em 0;
+    }
+
+    .div2{
+        width: 100%;
+        height: 80em;
+        align-items: center;
+        padding: 2em 0;
+    }
+    .heading {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    body {
+            height:100%;
+    }
+    .search_form{
+        align-items: center;
+    }
+}
+
+
