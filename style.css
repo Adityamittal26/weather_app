@@ -146,13 +146,14 @@ body {
             height:100%;
     }
     .search_form{
-        display: inline-grid;
+        display: contents;
         align-items: center;
     }
     .search{
         width: 80%;
     }
 }
+
 
 
 
